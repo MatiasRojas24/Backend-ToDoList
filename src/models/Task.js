@@ -8,7 +8,7 @@ const taskSchema = new mongoose.Schema({
     enum: ['pendiente', 'en progreso', 'completado'],
     default: 'pendiente',
   },
-  fechaLimite: { type: Date, required: true },
+  fechaLimite: { type: String, required: true },
 });
 
 export const Task = mongoose.model('Task', taskSchema);
